@@ -665,9 +665,6 @@ export default {
         }
   },
   beforeCreate() {
-        // let externalScript = document.createElement('script')
-        // externalScript.setAttribute('src', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCZtlgxhteKoCr-Hc5Vn4ewucA5lKtQ6DY&callback=initMap&libraries=&v=weekly')
-        // document.head.appendChild(externalScript)
 
         fetch('https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-regioni.json')
         .then(response => response.json())
